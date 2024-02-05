@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создание промокода</title>
+    <link rel="stylesheet" href="./SRC/public/tailwind.css" />
+  </head>
+  <body class="animate-appear overflow-hidden">
+    <!-- <div class="h-screen w-full flex justify-center"> -->
+    <div class="flex-col justify-center h-screen w-full">
+      <div class="animate-transBottom">
+        <img
+          src="./src/jumeko.jpg"
+          class="w-full h-full relative shadow-2xl shadow-red-700"
+        />
+      </div>
+      <h1
+        id="title"
+        class="text-black text-3xl Poppins font-semibold w-full ml-3 mt-10 inline-flex animate-transLeft"
+      >
+        <p class="">➕</p>
+        Создание промокода
+      </h1>
+
+      <ul class="w-full px-9 mt-6 animate-transRight space-y-4">
+        <li class="">
+          <p class="font-semibold text-lg">Промокод:</p>
+          <div class="inline-flex">
+            <input
+              type="text"
+              placeholder="H33H-8GGz-xCgg-66hg"
+              id="input1"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+            />
+            <button class="absolute" onclick="console.log(123)">
+              <img
+                src="./src/icons/random.svg"
+                class="w-[50px] h-[40px] bg-black rounded-l-3xl"
+              />
+            </button>
+          </div>
+        </li>
+
+        <li class="">
+          <p class="font-semibold text-lg">Использования:</p>
+          <div class="inline-flex">
+            <input
+              type="text"
+              placeholder="100"
+              id="input2"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+            />
+            <button class="absolute" onclick="console.log(123)">
+              <img
+                src="./src/icons/limit.svg"
+                class="w-[50px] h-[40px] bg-black rounded-l-3xl"
+              />
+            </button>
+          </div>
+        </li>
+
+        <li class="">
+          <p class="font-semibold text-lg">Значение (валюта):</p>
+          <div class="inline-flex">
+            <input
+              type="text"
+              placeholder="20"
+              id="input3"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+            />
+            <button class="absolute" onclick="console.log(123)">
+              <img
+                src="./src/icons/money.svg"
+                class="w-[50px] h-[40px] bg-black rounded-l-3xl"
+              />
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
