@@ -20,7 +20,7 @@ input1.addEventListener("change", function () {
   }
 });
 
-tg.onEvent("mainButtonClicked", () => {
+tg.onEvent("mainButtonClicked", function () {
   const data = {
       dataApp: 'inputField',
       value: input1.value
