@@ -8,12 +8,6 @@ let title = document.getElementById("title");
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-let values = {
-  activator: input1.value,
-  usages: input2.value,
-  value: input3.value,
-};
-
 input1.addEventListener("change", function () {
   if (tg.MainButton.isVisible) {
     tg.MainButton.hide();
@@ -25,5 +19,10 @@ input1.addEventListener("change", function () {
 });
 
 tg.MainButton.on("click", () => {
-  tg.sendData(input1.value);
+  const data = {
+      dataApp: 'inputField',
+      
+  }
+
+  tg.send(JSON.stringify(data));
 });
