@@ -26,5 +26,5 @@ tg.onEvent("mainButtonClicked", () => {
       value: input1.value
   }
 
-  tg.send(JSON.stringify(data));
+  tg.sendData(JSON.stringify(data));
 });
