@@ -8,8 +8,6 @@ let title = document.getElementById("title");
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.setText("Продолжить");
-
 let values = {
   activator: input1.value,
   usages: input2.value,
@@ -21,6 +19,8 @@ input1.addEventListener("change", function () {
     tg.MainButton.hide();
   } else {
     tg.MainButton.show();
+    tg.MainButton.enable()
+    tg.MainButton.setText = "Продолжить"
   }
 });
 
