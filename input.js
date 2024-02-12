@@ -21,7 +21,7 @@ input1.addEventListener("change", function () {
 tg.MainButton.on("click", () => {
   const data = {
       dataApp: 'inputField',
-      
+      values: input1.value
   }
 
   tg.send(JSON.stringify(data));
