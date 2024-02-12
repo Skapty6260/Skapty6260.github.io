@@ -24,20 +24,25 @@ console.log(values)
   }
 };
 
-input1.addEventListener('change', () => {
+input1.addEventListener('change', function() {
   let val = input1.value;
+  console.log(val)
   values.activator = val;
   
   showMainBtn();
 })
-input2.addEventListener('change', () => {
+input2.addEventListener('change', function() {
   let val = input1.value;
+  console.log(val)
   values.usages = val;
-   showMainBtn();
+    
+  showMainBtn();
 })
-input3.addEventListener('change', () => {
+input3.addEventListener('change', function() {
   let val = input1.value;
   values.value = val;
+  console.log(val)
+    
   showMainBtn();
 })
 
