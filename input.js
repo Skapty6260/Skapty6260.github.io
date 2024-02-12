@@ -5,8 +5,11 @@ tg.expand();
 let input1 = document.getElementById("input1");
 let title = document.getElementById("title");
 
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.setParams({
+    text: 'Продолжить',
+    textColor: "#fffff",
+    color: "#2cab37"
+})
 
 input1.addEventListener("change", function () {
   if (tg.MainButton.isVisible) {
@@ -14,14 +17,13 @@ input1.addEventListener("change", function () {
   } else {
     tg.MainButton.show();
     tg.MainButton.enable()
-    tg.MainButton.setText = "Продолжить"
   }
 });
 
 tg.onEvent("mainButtonClicked", () => {
   const data = {
       dataApp: 'inputField',
-      values: input1.value
+      value: input1.value
   }
 
   tg.send(JSON.stringify(data));
