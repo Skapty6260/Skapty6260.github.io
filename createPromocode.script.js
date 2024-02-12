@@ -9,8 +9,6 @@ let input3 = document.getElementById("input3");
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.setText("Создать");
-
 let values = {
   activatior: input1.value,
   usages: input2.value,
@@ -21,6 +19,8 @@ const showMainBtn = () => {
   if (!values.activatior || !values.usages || !values.value) {
     tg.MainButton.hide();
   } else {
+    tg.mainButton.enable();
+    tg.MainButton.setText("Создать");
     tg.MainButton.show();
   }
 };
@@ -37,10 +37,15 @@ input3.addEventListener("change", function () {
 
 tg.onEvent("mainButtonClicked", () => {
   values = {
-    activatior: input1.value,
+    activator: input1.value,
     usages: input2.value,
     value: input3.value,
   };
 
-  tg.send(JSON.stringify(values));
+  const data = {
+      dataApp: 'createPromo',
+      values
+  }
+
+  tg.send(JSON.stringify(data));
 });
