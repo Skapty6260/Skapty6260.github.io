@@ -47,6 +47,7 @@ input3.addEventListener('change', function() {
 })
 
 tg.onEvent("mainButtonClicked", function () {
+  console.log('mainClkd');
   values = {
     activator: input1.value,
     usages: input2.value,
