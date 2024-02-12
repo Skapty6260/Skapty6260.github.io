@@ -15,6 +15,7 @@ tg.MainButton.setParams({
 let values = {};
 
 const showMainBtn = () => {
+console.log(values)
   if (!values.activatior || !values.usages || !values.value) {
     tg.MainButton.hide();
   } else {
