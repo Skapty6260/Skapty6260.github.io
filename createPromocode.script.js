@@ -12,11 +12,7 @@ tg.MainButton.setParams({
     color: "#2cab37"
 })
 
-let values = {
-  activatior: input1.value,
-  usages: input2.value,
-  value: input3.value,
-};
+let values = {};
 
 const showMainBtn = () => {
   if (!values.activatior || !values.usages || !values.value) {
