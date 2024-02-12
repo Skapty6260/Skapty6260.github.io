@@ -6,8 +6,11 @@ let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 let input3 = document.getElementById("input3");
 
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.setParams({
+    text: 'Создать',
+    textColor: "#fffff",
+    color: "#2cab37"
+})
 
 let values = {
   activatior: input1.value,
@@ -20,20 +23,26 @@ const showMainBtn = () => {
     tg.MainButton.hide();
   } else {
     tg.mainButton.enable();
-    tg.MainButton.setText("Создать");
     tg.MainButton.show();
   }
 };
 
-input1.addEventListener("change", function () {
+input1.addEventListener('change', () => {
+  let val = input1.value;
+  values.activator = val;
+  
   showMainBtn();
-});
-input2.addEventListener("change", function () {
+})
+input2.addEventListener('change', () => {
+  let val = input1.value;
+  values.usages = val;
+   showMainBtn();
+})
+input3.addEventListener('change', () => {
+  let val = input1.value;
+  values.value = val;
   showMainBtn();
-});
-input3.addEventListener("change", function () {
-  showMainBtn();
-});
+})
 
 tg.onEvent("mainButtonClicked", () => {
   values = {
