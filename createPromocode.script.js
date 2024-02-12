@@ -46,7 +46,7 @@ input3.addEventListener('change', function() {
   showMainBtn();
 })
 
-tg.onEvent("mainButtonClicked", () => {
+tg.onEvent("mainButtonClicked", function () {
   values = {
     activator: input1.value,
     usages: input2.value,
