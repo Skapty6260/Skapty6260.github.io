@@ -5,6 +5,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+body {
+  color: var(--tg-theme-text-color);
+}
+
 .JosefinSans {
   font-family: "Josefin Sans", serif;
 }

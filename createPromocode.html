@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Создание промокода</title>
     <link rel="stylesheet" href="./SRC/public/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="./SRC/icons/random.svg"
+      type="image/x-icon"
+    />
   </head>
   <body class="animate-appear overflow-hidden">
     <!-- <div class="h-screen w-full flex justify-center"> -->
     <div class="flex-col justify-center h-screen w-full">
       <div class="animate-transBottom">
         <img
-          src="./src/jumeko.jpg"
-          class="w-full h-full relative shadow-2xl shadow-red-700"
+          src="./SRC/jumeko.jpg"
+          class="w-full relative shadow-2xl shadow-red-700 h-1/4"
         />
       </div>
       <h1
         id="title"
-        class="text-black text-3xl Poppins font-semibold w-full ml-3 mt-10 inline-flex animate-transLeft"
+        class="text-2xl Poppins font-semibold w-full ml-3 mt-10 inline-flex animate-transLeft"
       >
         <p class="">➕</p>
         Создание промокода
@@ -31,11 +36,11 @@
               type="text"
               placeholder="H33H-8GGz-xCgg-66hg"
               id="input1"
-              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0 text-black"
             />
             <button class="absolute" onclick="console.log(123)">
               <img
-                src="./src/icons/random.svg"
+                src="./SRC/icons/random.svg"
                 class="w-[50px] h-[40px] bg-black rounded-l-3xl"
               />
             </button>
@@ -49,11 +54,11 @@
               type="text"
               placeholder="100"
               id="input2"
-              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0 text-black"
             />
             <button class="absolute" onclick="console.log(123)">
               <img
-                src="./src/icons/limit.svg"
+                src="./SRC/icons/limit.svg"
                 class="w-[50px] h-[40px] bg-black rounded-l-3xl"
               />
             </button>
@@ -67,11 +72,11 @@
               type="text"
               placeholder="20"
               id="input3"
-              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0"
+              class="border-black border-[2px] rounded-full relative ml-6 pl-7 p-[6.3px] z-0 text-black"
             />
             <button class="absolute" onclick="console.log(123)">
               <img
-                src="./src/icons/money.svg"
+                src="./SRC/icons/money.svg"
                 class="w-[50px] h-[40px] bg-black rounded-l-3xl"
               />
             </button>
@@ -80,5 +85,8 @@
       </ul>
     </div>
     <!-- </div> -->
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="createPromocode.script.js"></script>
   </body>
 </html>

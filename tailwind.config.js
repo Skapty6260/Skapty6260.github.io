@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./APPS/inputs/**/*.{js,ts,html}"],
+  content: ["./**/*.{js,ts,html}"],
   theme: {
     extend: {
       keyframes: {
