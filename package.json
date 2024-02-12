@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "postcss tailwind.css -o SRC/public/tailwind.css",
+    "build": "postcss STYLES/input.css -o SRC/public/input.css",
     "start:dev": "nodemon npm run build"
   },
   "devDependencies": {

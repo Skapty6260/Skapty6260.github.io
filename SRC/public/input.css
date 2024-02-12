@@ -2046,6 +2046,7 @@ video {
 
 body {
   color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
 }
 
 .JosefinSans {
@@ -2054,11 +2055,6 @@ body {
 .Poppins {
   font-family: "Poppins", sans-serif;
 }
-
-.bg-img {
-  background: url("./assets/jumeko.jpg");
-}
-
 @media (min-width: 640px){
 
   .sm\:container{
@@ -2100,36 +2096,29 @@ body {
     }
   }
 }
-
 .hover\:font-bold:hover{
   font-weight: 700;
 }
-
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
 }
-
 .hover\:before\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
 }
-
 .focus\:hover\:text-center:hover:focus{
   text-align: center;
 }
-
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
 }
-
 @media (min-width: 640px){
 
   .sm\:underline{
     text-decoration-line: underline;
   }
 }
-
 @media (prefers-color-scheme: dark){
 
   @media (min-width: 1024px){
