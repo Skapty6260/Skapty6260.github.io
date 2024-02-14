@@ -32,14 +32,14 @@ input1.addEventListener('change', function() {
   showMainBtn();
 })
 input2.addEventListener('change', function() {
-  let val = input1.value;
+  let val = input2.value;
   console.log(val)
   values.usages = val;
     
   showMainBtn();
 })
 input3.addEventListener('change', function() {
-  let val = input1.value;
+  let val = input2.value;
   values.value = val;
   console.log(val)
     
