@@ -39,7 +39,7 @@ input2.addEventListener('change', function() {
   showMainBtn();
 })
 input3.addEventListener('change', function() {
-  let val = input2.value;
+  let val = input3.value;
   values.value = val;
   console.log(val)
     
