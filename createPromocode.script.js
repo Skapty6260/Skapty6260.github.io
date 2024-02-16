@@ -19,8 +19,8 @@ console.log(values)
   if (!values.activator || !values.usages || !values.value) {
     tg.MainButton.hide();
   } else {
-    tg.mainButton.enable();
     tg.MainButton.show();
+    tg.MainButton.enable();
   }
 };
 
